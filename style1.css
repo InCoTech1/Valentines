@@ -1,0 +1,125 @@
+body {
+    background-color: #fde5e8; /* Light pink */
+    font-family: 'Arial', sans-serif;
+  }
+  #valentines-message {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #valentines-message h1 {
+    font-size: 24px;
+    color: #ff6b6b; /* Coral pink */
+    margin-bottom: 10px;
+  }
+  
+  .heart-icon {
+    color: #ff6b6b; /* Coral pink */
+    font-size: 28px;
+  }
+  .wink-icon {
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  
+  button#valentinesBtn {
+    background-color: #ff6b6b; /* Coral pink */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button#valentinesBtn:hover {
+    background-color: #ff9a8d; /* Light coral pink */
+  }
+  
+  .popup {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .popup h2 {
+    color: #ff6b6b; /* Coral pink */
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .popup.show {
+    display: block;
+  }
+  
+  button {
+    background-color: #ff6b6b; /* Coral pink */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff9a8d; /* Light coral pink */
+  }
+  
+  #startBtn {
+    margin-top: 20px;
+  }
+  
+  #finalPopup button {
+    margin: 10px;
+  }
+  
+  #yesBtn {
+    background-color: #ff6b6b; /* Coral pink */
+  }
+  
+  #noBtn {
+    background-color: #ff9a8d; /* Light coral pink */
+  }
+/* Your existing CSS code here */
+
+/* Heart animation */
+@keyframes heartFall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: heartFall 5s linear infinite;
+  }
+  /* Additional styles for mobile */
+@media only screen and (max-width: 600px) {
+    .popup, #valentines-message {
+      padding: 10px;
+      border-radius: 10px;
+    }
+}
+    
